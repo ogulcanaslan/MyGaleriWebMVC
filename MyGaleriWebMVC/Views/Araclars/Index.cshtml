@@ -1,0 +1,82 @@
+﻿@model IEnumerable<MyGaleriWebMVC.Models.Araclar>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Araçlar</h2>
+
+<p>
+    @Html.ActionLink("Yeni Araç Ekle", "Create",null,new { @class = "btn btn-outline-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AracFiyat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracAdet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracMarka)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracModel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracOzellik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracMotor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracPaket)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracRenk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subeler.SubeAdi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracAdet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracMarka)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracOzellik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracMotor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracPaket)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracRenk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subeler.SubeAdi)
+        </td>
+        <td>
+            @Html.ActionLink("Güncelle", "Edit", new { id=item.AracNo },new { @class = "btn btn-outline-primary" }) |
+            @Html.ActionLink("Araç Detay", "Details", new { id=item.AracNo }, new { @class = "btn btn-outline-info" }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.AracNo }, new { @class = "btn btn-outline-danger" })
+        </td>
+    </tr>
+}
+
+</table>

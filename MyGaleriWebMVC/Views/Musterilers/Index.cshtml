@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MyGaleriWebMVC.Models.Musteriler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Müşteriler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Müşteri Ekle", "Create",null, new { @class = "btn btn-outline-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriIsim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriYas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriBakiye)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MusteriIsim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MusteriYas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MusteriBakiye)
+        </td>
+        <td>
+            @Html.ActionLink("Güncelle", "Edit", new { id=item.MusteriNo }, new { @class = "btn btn-outline-primary" }) |
+            @Html.ActionLink("Müşteri Detay", "Details", new { id=item.MusteriNo }, new { @class = "btn btn-outline-info" }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.MusteriNo }, new { @class = "btn btn-outline-danger" })
+        </td>
+    </tr>
+}
+
+</table>

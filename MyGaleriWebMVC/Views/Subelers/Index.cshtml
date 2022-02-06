@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MyGaleriWebMVC.Models.Subeler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Şubeler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Şube Ekle", "Create",null, new { @class = "btn btn-outline-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SubeAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubeCalisanSayisi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubeCiro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Musteriler.MusteriIsim)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubeAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubeCalisanSayisi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubeCiro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Musteriler.MusteriIsim)
+        </td>
+        <td>
+            @Html.ActionLink("Güncelle", "Edit", new { id=item.SubeNo }, new { @class = "btn btn-outline-primary" }) |
+            @Html.ActionLink("Şube Detay", "Details", new { id=item.SubeNo }, new { @class = "btn btn-outline-info" }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.SubeNo }, new { @class = "btn btn-outline-danger" })
+        </td>
+    </tr>
+}
+
+</table>

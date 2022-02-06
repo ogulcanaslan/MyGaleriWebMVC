@@ -1,0 +1,97 @@
+﻿@model MyGaleriWebMVC.Models.Araclar
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Araclar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AracFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracAdet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracAdet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracMarka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracMarka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracOzellik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracOzellik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracMotor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracMotor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracPaket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracPaket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracRenk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracRenk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subeler.SubeAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subeler.SubeAdi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-outline-danger" /> |
+            @Html.ActionLink("Back to List", "/Araclars/Index")
+        </div>
+    }
+</div>

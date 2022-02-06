@@ -1,0 +1,91 @@
+﻿@model MyGaleriWebMVC.Models.Araclar
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Araclar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AracFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracAdet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracAdet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracMarka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracMarka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracOzellik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracOzellik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracMotor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracMotor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracPaket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracPaket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracRenk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracRenk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subeler.SubeAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subeler.SubeAdi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Güncelle", "Edit", new { id = Model.AracNo }, new { @class = "btn btn-outline-primary" }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

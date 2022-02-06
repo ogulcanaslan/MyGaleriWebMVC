@@ -1,0 +1,43 @@
+﻿@model MyGaleriWebMVC.Models.Musteriler
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Musteriler</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MusteriIsim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MusteriIsim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MusteriYas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MusteriYas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MusteriBakiye)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MusteriBakiye)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Güncelle", "Edit", new { id = Model.MusteriNo }, new { @class = "btn btn-outline-primary" }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,51 @@
+﻿@model MyGaleriWebMVC.Models.Subeler
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MyLayoutPage1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Subeler</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SubeAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubeAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubeCalisanSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubeCalisanSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubeCiro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubeCiro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Musteriler.MusteriIsim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Musteriler.MusteriIsim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Güncelle", "Edit", new { id = Model.SubeNo }, new { @class = "btn btn-outline-primary" }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ArabaBiz.com</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: BizPage - v5.8.0
+    * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+
+</head>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-11 d-flex align-items-center justify-content-between">
+                    <h1 class="logo"><a href="/Home/Index">ArabaBiz.com</a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="nav-link scrollto active" href="/Home/Index">Home</a></li>
+                            <li><a class="nav-link scrollto" href="/Araclars/Index">Cars</a></li>
+                            <li><a class="nav-link scrollto" href="/Musterilers/Index">Customers</a></li>
+                            <li><a class="nav-link scrollto " href="/Subelers/Index">Brancehes</a></li>
+                            
+                            <li class="dropdown">
+                                <a href="#"><span>|||</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    
+                                    
+                                    <li><a href="/Araclars/Index">Cars</a></li>
+                                    <li><a href="/Musterilers/Index">Customers</a></li>
+                                    <li><a href="/Subelers/Index">Brancehes</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav><!-- .navbar -->
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    
+
+    
+
+    <main id="main">
+
+
+
+
+
+
+
+
+
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3 class="section-title">Our Portfolio</h3>
+                </header>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class=" col-lg-12">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">Tüm Arabalar</li>
+                            <li data-filter=".filter-app">Araba 1</li>
+                            <li data-filter=".filter-card">Araba 2</li>
+                            <li data-filter=".filter-web">Araba 3</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    @RenderBody()
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/web3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/app2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 2"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/card2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/web2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/app3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/card1.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/card3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="~/assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+                                <a href="~/assets/img/portfolio/web1.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+                                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="portfolio-details.html"></a></h4>
+                                <p>Araba</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Section -->
+
+        
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h3>İletişim</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+
+                <div class="row contact-info">
+
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Adres</h3>
+                            <address>Üsküdar Üniversitesi, Üsküdar/İstanbul, Türkiye</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="bi bi-phone"></i>
+                            <h3>Telefon Numarası</h3>
+                            <p><a href="tel:+155895548855">+90 (507) 515 15 14</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@example.com">ogulcan.aslan@hotmail.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder=" Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Mesajınız" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Yükleniyor</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Mesajınızı Aldık. Teşekkür Ederiz</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Mesajı Gönder</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>ArabaBiz.com</h3>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    </div>
+
+                    
+
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Bize Ulaşın</h4>
+                        <p>
+                            Üsküdar Üniversitesi <br>
+                            İstanbul, Üsküdar<br>
+                            Türkiye <br>
+                            <strong>Telefon:</strong> +90 (507) 515 15 14<br>
+                            <strong>Email:</strong> ogulcan.aslan@hotmail.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>ArabaBiz.Com</strong>. Tüm Hakkı Saklıdır
+            </div>
+            <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+                -->
+               
+
+
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="~/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+
+</html>
